@@ -1,0 +1,281 @@
+<!DOCTYPE HTML>
+<html>
+    <head>  
+        <title>Família RBR</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,height=device-height">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="mobile-web-app-capable" content="yes">
+        <link rel="icon" type="image/png" href="http://icons.iconarchive.com/icons/graphicloads/100-flat/256/home-icon.png" />
+        <link href="https://fonts.googleapis.com/css?family=Oswald:700|Ubuntu:500" rel="stylesheet">
+        <style type="text/css">
+            *{
+                padding: 0px;
+                margin: 0px;
+            }
+            body{
+                background: linear-gradient(to bottom, #3d3d3d 0%,#ffffff 30%) ;
+            }
+            nav{
+                display: none;
+                position: fixed;
+                width: 98%;
+                margin-left: 1%;
+                margin-right: 1%;
+                margin-top: 1vh;
+                border-radius: 10px;
+                height: 8vh;
+                color: white;
+                background-color: #3F51b5;
+                box-shadow:0 2px 5px rgba(0,0,0,0.5);
+                font-family: 'Oswald';
+                font-weight: 600;
+                font-size: 3vh;
+                justify-content: center;
+                
+            }
+            nav > p{
+                margin: auto;
+            }
+            #content{
+                display: grid;
+                width: 100%;
+                height: auto;
+                background-color: transparent;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: auto;
+                grid-gap: 4vmax;
+              padding-top:2vh;
+                
+            }
+                .title{
+                    
+                    font-family: 'Ubuntu';
+                    font-size: 7vh;
+                    
+                    color: rgba(0,0,0,0.8);
+                    
+                    font-weight: bold;
+                }
+                #tarefadomestica{
+                    grid-row: 1;
+                    grid-column-start: 1;
+                    grid-column-end: 4;
+                    height: 10vh;
+                    width: 90%;
+                    margin: auto;
+                    color: white;
+                    
+                }
+                .box{
+                    height: 30vmin;
+                    width: 95%;
+                    margin: auto;
+                    background-color: white;
+                    box-shadow: 1px 5px 10px rgba(0,0,0,0.5);
+                    color: black;
+                    display: flex;
+                    border-radius: 10px;
+                    
+                    
+                }
+               
+                .imgperfil{
+                    
+                    background-image: url(https://cdn.icon-icons.com/icons2/933/PNG/512/round-account-button-with-user-inside_icon-icons.com_72596.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    flex: 1;
+                    margin: 3%;
+                }
+                .subbox2{
+                    flex: 3;   
+                    display: flex;
+                    flex-direction: column;
+                    justify-content:flex-start;
+                    margin: 4%;
+                }
+                .textobox{
+                    color: black;
+                    font-size: 2vh;
+                    font-family: 'Ubuntu';
+                }
+            #nome{
+                flex:1.5;
+                font-weight: bold;
+                font-size:1.5em;
+            }
+            #tarefa{
+                flex:1;
+                
+            }
+            span{
+                font-weight: bold;
+            }
+                #Ana{
+                    grid-row: 2;
+                    grid-column-start: 1;
+                    grid-column-end: 4;
+                }
+                #Jorge{
+                    grid-row: 3;
+                    grid-column-start: 1;
+                    grid-column-end: 4;
+                }
+                #Onillis{
+                    grid-row: 4;
+                    grid-column-start: 1;
+                    grid-column-end: 4;
+                }
+                #Paulo{
+                    grid-row: 5;
+                    grid-column-start: 1;
+                    grid-column-end: 4;
+                }
+                footer{
+                    height: 15vmax;
+                    width: 100%;
+                    margin-top: 5vh;
+                    background-color: #3d3d3d;
+                }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <p>RBR's</p>
+        </nav>
+        
+        <section id="content">
+            <p id="tarefadomestica" class="title">Tarefas</p>
+            <div id="Ana" class="box">
+                <div class="imgperfil"></div>
+                <div class="subbox2">
+                    <p id="nome" class="textobox">Ana</p>
+                    <p id="tarefa" class="textobox">Diária: <span id="dana">h</span></p>
+                    <p id="tarefa" class="textobox">Semanal: <span id="sana"></span></p>
+                </div>
+            </div>
+            <div id="Jorge" class="box">
+                
+                    <div class="imgperfil"></div>
+                 
+                <div class="subbox2">
+                    <p id="nome" class="textobox">Jorge</p>
+                    <p id="tarefa" class="textobox">Diária: <span id="djorge"></span></p>
+                    <p id="tarefa" class="textobox">Semanal: <span id="sjorge"></span></p>
+                </div>
+            </div>
+            <div id="Onillis" class="box">
+                
+                    <div class="imgperfil"></div>
+                     
+                <div class="subbox2">
+                    <p id="nome" class="textobox">Onillis</p>
+                    <p id="tarefa" class="textobox">Diária: <span id="donillis"></span></p>
+                    <p id="tarefa" class="textobox">Semanal: <span id="sonillis"></span></p>
+                </div>
+            </div>
+            <div id="Paulo" class="box">
+                
+                    <div class="imgperfil"></div>
+                 
+                <div class="subbox2">
+                    <p id="nome" class="textobox">Paulo</p>
+                    <p id="tarefa" class="textobox">Diária: <span id="dpaulo"></span></p>
+                    <p id="tarefa" class="textobox">Semanal: <span id="spaulo"></span></p>
+                </div>
+            </div>
+            
+        </section>
+        <footer>
+        
+        </footer>
+        <script type="text/javascript">
+        var tarefas = [
+              "Lavar a louça do almoço & Tirar o lixo",
+              "Passar pano na casa & Aspirar tapete",
+              "Secar a louça do almoço/jantar & Fazer gelo",
+              "Pendurar roupas no varal & Lavar a louça do jantar",
+              "Limpeza geral da sala",
+              "Limpeza geral do banheiro",
+              "Nenhuma"
+            ];
+        
+        Date.prototype.getWeekNumber = function(){
+  
+            var d = new Date();
+       
+            var dayNum = d.getUTCDay() || 7;
+  d.setUTCDate(d.getUTCDate() + 4 - dayNum);
+  var yearStart = new Date(Date.UTC(d.getUTCFullYear(),0,1));
+  return Math.ceil((((d - yearStart) / 86400000) + 1)/7)
+};
+      
+        var x =   new Date().getWeekNumber() % 4 ;
+                          
+            switch(x){
+                case 1:
+                    document.getElementById("dpaulo").innerHTML=tarefas[0];
+                    document.getElementById("dana").innerHTML=tarefas[1];
+                    document.getElementById("donillis").innerHTML=tarefas[2];
+                    document.getElementById("djorge").innerHTML=tarefas[3];
+                    
+                    
+                    document.getElementById("spaulo").innerHTML=tarefas[4];
+                    document.getElementById("sana").innerHTML=tarefas[5];
+                    document.getElementById("sonillis").innerHTML=tarefas[6];
+                    document.getElementById("sjorge").innerHTML=tarefas[6];
+                    
+                                        
+                break;
+                case 2:
+                    document.getElementById("dpaulo").innerHTML=tarefas[3];
+                    document.getElementById("dana").innerHTML=tarefas[0];
+                    document.getElementById("donillis").innerHTML=tarefas[1];
+                    document.getElementById("djorge").innerHTML=tarefas[2];
+                   
+                    
+                    document.getElementById("spaulo").innerHTML=tarefas[6];
+                    document.getElementById("sana").innerHTML=tarefas[4];
+                    document.getElementById("sonillis").innerHTML=tarefas[5];
+                    document.getElementById("sjorge").innerHTML=tarefas[6];
+                  
+                  
+                break;
+                case 3:
+                    document.getElementById("dpaulo").innerHTML=tarefas[2];
+                    document.getElementById("dana").innerHTML=tarefas[3];
+                    document.getElementById("donillis").innerHTML=tarefas[0];
+                    document.getElementById("djorge").innerHTML=tarefas[1];
+                 
+                    
+                    document.getElementById("spaulo").innerHTML=tarefas[6];
+                    document.getElementById("sana").innerHTML=tarefas[6];
+                    document.getElementById("sonillis").innerHTML=tarefas[4];
+                    document.getElementById("sjorge").innerHTML=tarefas[5];
+                   
+                 
+                    break;
+             
+                case 0:
+                    document.getElementById("dpaulo").innerHTML=tarefas[1];
+                    document.getElementById("dana").innerHTML=tarefas[2];
+                    document.getElementById("donillis").innerHTML=tarefas[3];
+                    document.getElementById("djorge").innerHTML=tarefas[0];
+                  
+                    
+                    document.getElementById("spaulo").innerHTML=tarefas[5];
+                    document.getElementById("sana").innerHTML=tarefas[6];
+                    document.getElementById("sonillis").innerHTML=tarefas[6];
+                    document.getElementById("sjorge").innerHTML=tarefas[4];
+               
+
+                  
+                    break;
+                    
+            };
+    </script>
+    </body>
+    
+</html>
